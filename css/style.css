@@ -101,7 +101,8 @@ nav {
 .services-container {
     padding: 5rem 0;
     position: relative;
-    top: -60px;
+    top: -50px;
+    margin: 0;
 }
 .services-container ul {
     display: flex;
@@ -334,4 +335,11 @@ nav {
     margin: 0;
     z-index: 100;
     pointer-events: none;
+}
+.marcas img {
+    padding: 10px !important; /* Reduz o padding entre imagens */
+    height: auto; /* Altura automática */
+    max-width: 200px; /* Largura máxima para as imagens */
+    width: 130px; /* Responsividade */
+    margin: 0 auto; /* Centraliza as imagens */
 }
