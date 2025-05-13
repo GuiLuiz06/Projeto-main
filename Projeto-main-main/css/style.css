@@ -4,6 +4,7 @@
     padding: 0;
     font-family: helvetica;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 h1, h2, h3 {
     color: #c02424;
@@ -18,7 +19,8 @@ p {
     width: 100%;
     height: 80px;
     background-color: #232a31;
-    padding: 0 2rem;    
+    padding: 0 2rem; 
+       
 }
 
 nav {
@@ -39,8 +41,7 @@ nav {
     position: absolute;
     right: 0;
     height: 80px;
-    line-height: 80px;
-    margin: 0;
+    line-height: 80px;  
     display: inline-block;
 }
 
@@ -73,11 +74,10 @@ nav {
 
 /* main banner */
 .main-banner {
-  background-color: #c02424;
+    width: auto;
+    background-color: #c02424;
     background-size: cover;
     background-position: center;
-    padding: 5rem 0;
-    
 }
 
 .main-banner h1,
@@ -106,7 +106,7 @@ nav {
 }
 .services-container ul {
     display: flex;
-    width: 90%;
+    width: 90vw;
     margin: 0 auto;
 }
 .services-container li {
@@ -267,7 +267,7 @@ nav {
     font-family: Helvetica, Arial, sans-serif; /* Fallback de fonte */
     text-align: center;
     position: relative;
-    width: 100%; /* Garante largura total */
+    width: 100vw; /* Garante largura total */
     margin: 0; /* Remove margens padrão */
     box-sizing: border-box; /* Inclui padding na largura total */
 }
@@ -288,7 +288,7 @@ nav {
 }
 .services-container-2 ul {
     display: flex;
-    width: 90%;
+    width: 90vw;
     margin: 0 auto;
 }
 .services-container-2 li {
@@ -324,6 +324,7 @@ nav {
     background: transparent;
     pointer-events: auto; /* Habilita cliques */
     z-index: 100;
+    padding-top: 40px;
 }
 .joia{
     position: absolute;  /* Troquei relative por absolute */
@@ -336,4 +337,193 @@ nav {
     z-index: 100;
     pointer-events: none;
 }
+
+
+/* Media Queries para Navbar Responsiva */
+@media (max-width: 1280px) {
+    .aut {
+        width: 30vw;
+        padding-top: 50px;
+    }
+}
+/* Tablets (768px a 1024px) */
+@media (max-width: 1024px) {
+    .navbar-container {
+        height: auto;
+        padding: 10px 1rem;
+    }
+    
+    .navbar-items {
+        position: static;
+        height: auto;
+        line-height: normal;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px 0;
+    }
+    
+    .navbar-items li {
+        margin: 5px 10px;
+    }
+    
+    .logo {
+        display: block;
+        margin: 0 auto 10px;
+        left: 0;
+        text-align: center;
+    }
+    
+    .default-btn {
+        padding: 10px 15px;
+    }
+    .aut {
+        width: 35vw;
+        padding-top: 50px;
+        height: 15vh;
+    }
+    .joia {
+        width: 20vw;
+    }
+    .bottom-contact {
+        right: 45px;
+    }
+    .email {
+        padding-right: 10%;
+    }
+    .rdp-logo {
+        right: 50px;
+    }
+    .contacts {
+        display: flex;
+        padding-left: 33%;
+    }
+}
+
+/* Celulares grandes (576px a 768px) */
+@media (max-width: 768px) {
+    .navbar-items {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navbar-items li {
+        margin: 5px 0;
+    }
+    
+    .main-banner h1 {
+        font-size: 2.5rem;
+    }
+    
+    .main-banner p {
+        font-size: 1.5rem;
+    }
+    
+    .aut {
+        position: static;
+        display: block;
+        text-align: center;
+        margin: 10px auto;
+        width: 50vw;
+        height: 20vh
+    }
+    
+    .joia {
+        position: static;
+        display: block;
+        margin: 10px auto;
+        width: 60vw;
+        height: 30vh;
+    }
+    .rdp-logo,
+    .bottom-contact,
+    .email {
+        left: 10px;
+    }
+}
+
+/* Celulares pequenos (até 576px) */
+@media (max-width: 576px) {
+    .navbar-container {
+        padding: 10px;
+    }
+    
+    .navbar-items a {
+        font-size: 0.9rem;
+    }
+    
+    .main-banner h1 {
+        font-size: 2rem;
+        padding: 0 10px;
+    }
+    
+    .main-banner p {
+        font-size: 1.2rem;
+        padding: 0 10px;
+    }
+    
+    .default-btn {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .services-container,
+    .services-container-2 {
+        padding: 2rem 0;
+        top: 0;
+    }
+    
+    .services-container ul,
+    .services-container-2 ul {
+        flex-direction: column;
+        width: 95vw;
+    }
+    
+    .services-container li,
+    .services-container-2 li {
+        margin: 5px 0;
+    }
+    
+    .rdp-logo {
+        height: auto;
+        max-width: 150px;
+        padding: 5px 0;
+    }
+    .aut {
+        width: 70vw;
+        height: 19vh;
+    }
+    .email {
+        padding-left: 10%;
+    }
+    .contacts {
+        padding-left: 27%;
+    }
+}
+
+/* Ajustes para telas muito pequenas (até 360px) */
+@media (max-width: 360px) {
+    .main-banner h1 {
+        font-size: 1.8rem;
+    }
+    
+    .main-banner p {
+        font-size: 1rem;
+    }
+    
+    .navbar-items a {
+        font-size: 0.8rem;
+    }
+    
+    .bottom-contact {
+        font-size: 1rem;
+    }
+    
+    .email {
+        font-size: 0.9rem;
+    }
+    
+
+}
+
 
