@@ -304,12 +304,10 @@ nav {
 .services-container-2 p{
     color: #000;
 }
-
 .services-container-2 {
-    padding: 5rem 0;
-}
-.services-container-2 {
+    padding: 3rem 0;
     background-color: #fff;
+
 }
 .mcgames{
     color: red;
@@ -342,12 +340,13 @@ nav {
 /* Media Queries para Navbar Responsiva */
 @media (max-width: 1280px) {
     .aut {
-        width: 30vw;
+        height: 30vh;
+        width: 32vw;
         padding-top: 50px;
     }
 }
-/* Tablets (768px a 1024px) */
-@media (max-width: 1024px) {
+/* Tablets (768px a 1000px) */
+@media (max-width: 1000px) {
     .navbar-container {
         height: auto;
         padding: 10px 1rem;
@@ -380,7 +379,7 @@ nav {
     .aut {
         width: 35vw;
         padding-top: 50px;
-        height: 15vh;
+        height: auto;
     }
     .joia {
         width: 20vw;
@@ -396,9 +395,9 @@ nav {
     }
     .contacts {
         display: flex;
-        padding-left: 33%;
+        padding-left: 35%;
     }
-}
+}       
 
 /* Celulares grandes (576px a 768px) */
 @media (max-width: 768px) {
@@ -425,23 +424,29 @@ nav {
         text-align: center;
         margin: 10px auto;
         width: 50vw;
-        height: 20vh
+        height: auto;
     }
     
     .joia {
         position: static;
         display: block;
         margin: 10px auto;
-        width: 60vw;
+        width: 40vw;
         height: 30vh;
     }
     .rdp-logo,
-    .bottom-contact,
-    .email {
+    .bottom-contact {
         left: 10px;
     }
+    .email {
+        display: flex;
+        padding-left: 33%;
+    }
+    .contacts {
+        display: flex;
+        padding-left: 36%;
+    }
 }
-
 /* Celulares pequenos (até 576px) */
 @media (max-width: 576px) {
     .navbar-container {
@@ -491,13 +496,30 @@ nav {
     }
     .aut {
         width: 70vw;
-        height: 19vh;
+        height: auto;
     }
     .email {
-        padding-left: 10%;
+        display: flex;
+        padding-left: 25%;
+        padding-top: 20px;
     }
     .contacts {
-        padding-left: 27%;
+        padding-left: 30%;
+    }
+}
+@media (max-width: 500px) {
+    .email {
+        display: flex;
+        padding-left: 17%;
+        font-size: 20px;
+    }
+    .contacts {
+        padding-left: 25%
+    }
+    .aut {
+        width: 80vw;
+        height: auto;
+
     }
 }
 
@@ -521,6 +543,10 @@ nav {
     
     .email {
         font-size: 0.9rem;
+        padding-left: 23%;
+    }
+    .contacts{
+        padding-left: 20%;
     }
     /* faltam alterações ainda */
 }
