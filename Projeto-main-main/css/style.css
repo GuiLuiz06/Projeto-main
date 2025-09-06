@@ -20,7 +20,10 @@ p {
     height: 80px;
     background-color: #232a31;
     padding: 0 2rem; 
-       
+}
+.navbar-container img {
+    width: 10vw;
+    margin-top: 5px;
 }
 
 nav {
@@ -28,7 +31,7 @@ nav {
 }
 
 .logo {
-    width: auto;
+    width: 70vw;
     height: auto;
     position: relative;
     z-index: auto;
@@ -74,7 +77,7 @@ nav {
 
 /* main banner */
 .main-banner {
-    width: auto;
+    height: 16vh;
     background-color: #c02424;
     background-size: cover;
     background-position: center;
@@ -115,6 +118,7 @@ nav {
     text-align: center;
     padding: 20px;
 }
+
 .fa-instagram {
     color: #fdfdfd;
     position: relative;
@@ -231,6 +235,9 @@ nav {
 .services-container li {
     background-color: #f3eeee;
 }
+.services-container img {
+    height: 15vh;
+}
 
 .bottom-contact {
     text-decoration: none;
@@ -336,20 +343,47 @@ nav {
     pointer-events: none;
 }
 
-
-/* Media Queries para Navbar Responsiva */
 @media (max-width: 1280px) {
+    .navbar-container img{
+        width: 15vw;
+    }
+     .aut {
+        height: auto;
+        width: 35vw;
+        padding-top: 50px;
+    }
+    .main-banner {
+    height: 15vh;
+    }
+}
+/* Media Queries para Navbar Responsiva */
+@media (max-width: 1024px) {
     .aut {
         height: 30vh;
         width: 32vw;
         padding-top: 50px;
     }
+    .main-banner {
+    height: 20vh;
+    }
+    .navbar-container img{
+        width: 19vw;
+    }
+
+
 }
 /* Tablets (768px a 1000px) */
 @media (max-width: 1000px) {
     .navbar-container {
         height: auto;
         padding: 10px 1rem;
+    }
+    .navbar-container img{
+        width: 40vw;
+    }
+    .services-container img {
+        width: 40vw;
+        height: auto;
     }
     
     .navbar-items {
@@ -405,6 +439,10 @@ nav {
         flex-direction: column;
         align-items: center;
     }
+    .navbar-container img{
+        width: 60vw;
+        
+    }
     
     .navbar-items li {
         margin: 5px 0;
@@ -451,6 +489,10 @@ nav {
 @media (max-width: 576px) {
     .navbar-container {
         padding: 10px;
+    }
+    .navbar-container img{
+        width: 60vw;
+        
     }
     
     .navbar-items a {
@@ -513,6 +555,10 @@ nav {
         padding-left: 17%;
         font-size: 20px;
     }
+    .navbar-container img{
+        width: 60vw;
+        
+    }
     .contacts {
         padding-left: 25%
     }
@@ -535,6 +581,10 @@ nav {
     
     .navbar-items a {
         font-size: 0.8rem;
+    }
+    .navbar-container img{
+        width: 60vw;
+        
     }
     
     .bottom-contact {
