@@ -358,11 +358,6 @@ nav {
 }
 /* Media Queries para Navbar Responsiva */
 @media (max-width: 1024px) {
-    .aut {
-        height: 30vh;
-        width: 32vw;
-        padding-top: 50px;
-    }
     .main-banner {
     height: 20vh;
     }
@@ -370,8 +365,12 @@ nav {
         width: 18vw;
     }
     .aut {
-        height: 30vh;
+        height: auto;
         width: 33vw;
+    }
+    .services-container img {
+        width: 30vw;
+        height: auto;
     }
 }
 @media (max-width: 912px) {
